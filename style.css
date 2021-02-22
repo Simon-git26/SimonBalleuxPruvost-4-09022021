@@ -27,7 +27,17 @@ strong {
     font-weight: normal;
 }
 
+.pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.foot {
+    width: 85%;
+    justify-content: space-around;
+    display: flex;
+}
 
 
 
