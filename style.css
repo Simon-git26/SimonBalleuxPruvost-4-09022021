@@ -6,6 +6,7 @@
     font-size: 1.5em;
     width: 60%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .citat p:first-of-type {
@@ -22,6 +23,9 @@
     margin: auto;
 }
 
+strong {
+    font-weight: normal;
+}
 
 
 
