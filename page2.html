@@ -17,7 +17,7 @@
 
     <link rel="shortcut icon" type="image/png" href="faviconredim.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
@@ -88,34 +88,30 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form method="post" action="traitement.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					
 					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
+						<label for="pseudo">Nom et Prenom</label><br />
+						<input type="text" name="pseudo" placeholder="Boris" id="Nom et Prenom" class="form-control" required/>
+					</div>
+				
+					<div class="form-group">
+						<label for="mail">Adresse mail</label><br />
+						<input type="email" name="mail" placeholder="exemple@gmail.com" id="Adresse mail" class="form-control" required/>
 					</div>
 					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
+						<label for="answer">Comment nous avez-vous connu ?</label><br />
+						<input type="text" name="answer" placeholder="En cherchant sur internet,etc" id="Comment nous avez-vous connu ?" class="form-control" required/>
 					</div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<label for="brief">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label><br />
+						<textarea name="brief" id="Brief de votre projet (Ajoutez autant de détails que nécessaire)" class="form-control" rows="4" cols="50" placeholder="Décrivez votre projet en quelques lignes" required></textarea>
 					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
+
+				</form>
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
-				</form>
 			</div>
 			<div class="col-sm-6">
 				<div itemscope itemtype="http://schema.org">
