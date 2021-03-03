@@ -46,7 +46,31 @@ strong {
     margin-top: 5%;
 }
 
+.visible {
+    color: white;
+}
 
+.visible2 h2 {
+    color: white;
+}
+
+.visible2 p {
+    color: white;
+    font-size: 1.55em;
+}
+
+.size-center {
+    font-size: 1.2em;
+}
+
+.size-descrip {
+    font-size: 1.1em;
+}
+
+.color-h {
+    font-size: 1.8em;
+    color: white!important;
+}
 
 /* Code de base */
 
@@ -701,7 +725,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 
